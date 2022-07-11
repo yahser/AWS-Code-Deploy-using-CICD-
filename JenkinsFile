@@ -4,7 +4,7 @@ pipeline{
   stages {
     stage("Git-Creds"){
         steps {
-          git branch: 'Dev', credentialsId: 'f000e32a-bd80-44b3-a001-493d3c68861a', url: 'https://github.com/yahser/webserver-test.git'
+          git branch: 'Dev', credentialsId: 'your git creds', url: 'https://github.com/user-name/repo-name.git'
         }
     }
     stage("Code-Deploy"){
